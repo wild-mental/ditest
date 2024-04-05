@@ -1,11 +1,16 @@
 package ac.su.ditest.main;
 
+//import org.springframework.beans.factory.ListableBeanFactory;
+import org.springframework.beans.factory.ListableBeanFactory;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import ac.su.ditest.obj.*;
 
 public class BeanScanMain {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context =
+        // ListableBeanFactory context =
+        //    new AnnotationConfigApplicationContext(ApplicationConfig.class);
+        ApplicationContext context =
             new AnnotationConfigApplicationContext(ApplicationConfig.class);
         // Singer singer = new Singer();
 
